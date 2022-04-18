@@ -1,0 +1,18 @@
+.card{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: white;
+    border-radius: 5px;
+    justify-items: center;
+    margin: 10px;
+}
+
+/* column-voting */
+.column-voting{
+    grid-column: 1/1;
+}
+
+/* column-description */
+.column-description{
+    grid-column: 2/-1;
+}
