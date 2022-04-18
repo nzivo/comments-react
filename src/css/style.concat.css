@@ -7,11 +7,22 @@
   justify-items: center;
   align-items: center;
   width: 50%;
-  align-items: center; }
+  align-items: center;
+  margin: auto; }
+
+.m-r-5 {
+  margin-right: 5px; }
+
+.m-l-5 {
+  margin-left: 5px; }
 
 body {
   font-family: 'Rubik', sans-serif;
   background-color: #f5f6fa; }
+
+.material-icons {
+  font-size: 14px !important;
+  font-weight: 500; }
 
 .align-center {
   text-align: center; }
@@ -22,6 +33,18 @@ body {
   padding: 12px 28px;
   color: white;
   background-color: #5457b6;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px; }
+
+.cancel-btn {
+  all: unset;
+  cursor: pointer;
+  padding: 12px 28px;
+  color: white;
+  background-color: #ed6468;
   font-family: 'Rubik', sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -43,8 +66,7 @@ body {
   justify-content: flex-end;
   font-size: 12px;
   font-weight: 500;
-  cursor: pointer;
-  margin-top: 8px; }
+  cursor: pointer; }
 
 .reply-action-color {
   color: #5457b6; }
@@ -64,10 +86,14 @@ body {
 
 .form-row {
   display: grid;
+  padding-left: 10px;
+  padding-right: 10px;
   grid-template-columns: repeat(12, 1fr); }
 
-.form {
-  grid-column: 1/9; }
+.form-content {
+  display: flex;
+  grid-column: 1/12;
+  justify-content: flex-start; }
 
 .col-two-thirds {
   grid-column: 1/9; }
@@ -79,13 +105,18 @@ body {
   all: unset;
   cursor: pointer;
   width: 100%;
-  height: 150px;
+  height: 100px;
   padding: 12px 20px;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 2px solid #5457b6;
   border-radius: 5px;
   font-family: 'Rubik', sans-serif; }
+
+.reply-form-button {
+  flex-grow: 0;
+  align-self: flex-start;
+  margin-left: 10px; }
 
 .profile {
   display: grid;
@@ -142,19 +173,3 @@ img {
 /* column-description */
 .column-description {
   grid-column: 2/-1; }
-
-.reply-actions {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 500;
-  grid-column: 12/12;
-  color: #5457b6; }
-
-.material-icons {
-  font-size: 14px !important;
-  font-weight: 500; }
-
-.profile-description {
-  font-size: 14px;
-  color: #67727e; }

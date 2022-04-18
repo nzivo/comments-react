@@ -10,6 +10,20 @@
     text-transform: uppercase;
     border-radius: 5px;
 }
+
+.cancel-btn{
+    all: unset;
+    cursor: pointer;
+    padding: 12px 28px;;
+    color: white;
+    background-color: hsl(358, 79%, 66%);
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
 .reply-actions{
     display:flex;
     align-items: center;
@@ -27,7 +41,6 @@
     font-size: 12px;
     font-weight: 500;
     cursor: pointer;
-    margin-top: 8px;
 }
 
 .reply-action-color{

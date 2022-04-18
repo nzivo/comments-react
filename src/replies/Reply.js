@@ -49,7 +49,7 @@ const Reply = ({
               <div className="reply-actions">
                 {canEdit && (
                   <div
-                    className="reply-actions reply-action-color"
+                    className="reply-actions reply-action-color m-r-5 m-l-5"
                     onClick={() =>
                       setActiveReply({ id: reply.id, type: "editing" })
                     }
@@ -59,7 +59,7 @@ const Reply = ({
                 )}
                 {canDelete && (
                   <div
-                    className="reply-actions delete-action"
+                    className="reply-actions delete-action m-r-5 m-l-5"
                     onClick={() => deleteReply(reply.id)}
                   >
                     <i class="material-icons">delete</i> Delete
@@ -67,7 +67,7 @@ const Reply = ({
                 )}
                 {canReply && (
                   <div
-                    className="reply-actions reply-action-color"
+                    className="reply-actions reply-action-color m-r-5 m-l-5"
                     onClick={() =>
                       setActiveReply({ id: reply.id, type: "replying" })
                     }

@@ -16,7 +16,7 @@ const ReplyForm = ({
   };
   return (
     <div className="form-row" >
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className="form-content">
         <textarea
           className="reply-form-textarea"
           value={text}
@@ -28,7 +28,7 @@ const ReplyForm = ({
         {hasCancelButton && (
           <button
             type="button"
-            className="reply-form-button reply-form-cancel-button"
+            className="cancel-btn reply-form-button reply-form-cancel-button"
             onClick={handleCancel}
           >
             Cancel

@@ -14,27 +14,3 @@
 @import "components/voting-button";
 
 @import "layouts/card";
-
-.reply-actions{
-  display:flex;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 500;
-  grid-column: 12/12;
-  color: hsl(238, 40%, 52%);
-}
-
-.material-icons{
-  font-size: 14px!important;
-  font-weight: 500;
-}
-
-.profile-description{
-  font-size: 14px;
-  color: hsl(211, 10%, 45%);
-}
-
-
-
-
-
