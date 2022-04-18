@@ -1,0 +1,36 @@
+.reply-button {
+    display: flex;
+    align-items: flex-end;
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(238, 40%, 52%);
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.material-icons{
+    font-size: 12px;
+} 
+.reply-actions {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.reply-action-color{
+    color: hsl(238, 40%, 52%);
+}
+
+.delete-action{
+    color: hsl(358, 79%, 66%);
+}
+.reply-action {
+    margin-right: 8px;
+}
+
+.reply-action:hover {
+    text-decoration: underline;
+}

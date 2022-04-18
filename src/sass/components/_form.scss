@@ -1,0 +1,37 @@
+.reply-form-title {
+    font-size: 22px;
+}
+
+.replies-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.reply-form-textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border: 1px solid rgb(107, 114, 12);
+}
+
+.reply-form-button {
+    font-size: 16px;
+    padding: 8px 16px;
+    background: hsl(238, 40%, 52%);
+    border-radius: 8px;
+    color: white;
+}
+
+.reply-form-button:hover:enabled {
+    cursor: pointer;
+    background: hsl(238, 40%, 52%);
+}
+
+.reply-form-button:disabled {
+    cursor: default;
+}
+
+.reply-form-cancel-button {
+    margin-left: 10px;
+}

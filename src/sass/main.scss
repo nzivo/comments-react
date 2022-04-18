@@ -1,0 +1,39 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+@import "components/card";
+@import "components/content";
+@import "components/form";
+@import "components/profile-details";
+@import "components/voting-button";
+
+.replies {
+  margin-top: 20px;
+}
+
+.replies-container {
+  margin-top: 40px;
+}
+
+.reply {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.reply-right-part {
+  width: 100%;
+}
+
+
+
+
+
+
+

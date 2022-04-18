@@ -1,0 +1,22 @@
+.reply-image-container {
+    margin-right: 12px;
+}
+
+.reply-image-container img {
+    border-radius: 50px;
+    height: 32px;
+}
+
+.reply-author {
+    margin-right: 8px;
+    font-size: 16px;
+    color: hsl(212, 24%, 26%);
+    font-weight: 500;
+}
+  
+.reply-date{
+    margin-right: 8px;
+    font-size: 14px;
+    color: hsl(211, 10%, 45%);
+    font-weight: 400;
+}

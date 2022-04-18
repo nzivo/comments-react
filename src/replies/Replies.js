@@ -60,9 +60,7 @@ const Replies = ({ repliesUrl, currentUserId }) => {
   return (
     <div className="container w-50">
       <div className="replies">
-        <h3 className="replies-title">Comment</h3>
-        <div className="reply-form-title">Post a Comment reply</div>
-        <ReplyForm className="form-control" submitLabel="Post Comment" handleSubmit={addReply} />
+        
         <div className="replies-container">
           {rootReplies.map((rootReply) => (
             <Reply
@@ -78,6 +76,10 @@ const Replies = ({ repliesUrl, currentUserId }) => {
             />
           ))}
         </div>
+
+        <h3 className="replies-title">Comment</h3>
+        <div className="reply-form-title">Post a Comment reply</div>
+        <ReplyForm className="form-control" submitLabel="Post Comment" handleSubmit={addReply} />
       </div>
     </div>
     
