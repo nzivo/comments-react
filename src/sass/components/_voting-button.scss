@@ -1,0 +1,16 @@
+.vote{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 33%, 97%);
+    color: hsl(238, 40%, 52%);
+    align-items: center;
+    width: 20px;
+    border-radius: 5px;
+}
+
+.votes{
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(238, 40%, 52%);
+}

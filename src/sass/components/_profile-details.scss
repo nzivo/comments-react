@@ -1,22 +1,26 @@
-.reply-image-container {
-    margin-right: 12px;
-}
-
-.reply-image-container img {
-    border-radius: 50px;
-    height: 32px;
-}
-
-.reply-author {
-    margin-right: 8px;
-    font-size: 16px;
-    color: hsl(212, 24%, 26%);
-    font-weight: 500;
+.profile{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
 }
   
-.reply-date{
-    margin-right: 8px;
-    font-size: 14px;
-    color: hsl(211, 10%, 45%);
+.profile-details{
+    display: flex;
+    align-items: center;
+    grid-column: 1/11;
+}
+img{
+    border-radius: 50px;
+    height: 32px;
+    padding: 10px;
+}
+.author{
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(212, 24%, 26%);
+}
+.date{
+    font-size: 12px;
     font-weight: 400;
+    color: hsl(211, 10%, 45%);
 }

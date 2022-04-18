@@ -1,37 +1,29 @@
-.reply-form-title {
-    font-size: 22px;
+.form-row{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
-.replies-title {
-    font-size: 30px;
-    margin-bottom: 20px;
+.form{
+    grid-column: 1/9;
 }
 
-.reply-form-textarea {
-    width: 100%;
-    height: 80px;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    border: 1px solid rgb(107, 114, 12);
+.col-two-thirds{
+    grid-column: 1/9;
 }
 
-.reply-form-button {
-    font-size: 16px;
-    padding: 8px 16px;
-    background: hsl(238, 40%, 52%);
-    border-radius: 8px;
-    color: white;
+.col-third{
+    grid-column: 1/3;
 }
 
-.reply-form-button:hover:enabled {
+.reply-form-textarea{
+    all: unset;
     cursor: pointer;
-    background: hsl(238, 40%, 52%);
-}
-
-.reply-form-button:disabled {
-    cursor: default;
-}
-
-.reply-form-cancel-button {
-    margin-left: 10px;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 2px solid hsl(238, 40%, 52%);
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
 }

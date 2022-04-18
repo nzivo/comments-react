@@ -1,11 +1,21 @@
-.reply-button {
-    display: flex;
-    align-items: flex-end;
+.main-btn{
+    all: unset;
+    cursor: pointer;
+    padding: 12px 28px;;
+    color: white;
+    background-color: hsl(238, 40%, 52%);
+    font-family: 'Rubik', sans-serif;
     font-size: 12px;
     font-weight: 500;
-    color: hsl(238, 40%, 52%);
-    cursor: pointer;
-    margin-top: 8px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.reply-actions{
+    display:flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    grid-column: 12/12;
 }
 
 .material-icons{
