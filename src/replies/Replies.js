@@ -58,7 +58,7 @@ const Replies = ({ repliesUrl, currentUserId }) => {
   }, []);
 
   return (
-    <div className="container w-50">
+    <div className="">
       <div className="replies">
         
         <div className="replies-container">
@@ -77,9 +77,7 @@ const Replies = ({ repliesUrl, currentUserId }) => {
           ))}
         </div>
 
-        <h3 className="replies-title">Comment</h3>
-        <div className="reply-form-title">Post a Comment reply</div>
-        <ReplyForm className="form-control" submitLabel="Post Comment" handleSubmit={addReply} />
+        <ReplyForm className="form" submitLabel="Send" handleSubmit={addReply} />
       </div>
     </div>
     

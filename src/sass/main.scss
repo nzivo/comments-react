@@ -8,30 +8,31 @@
 @import "base/utilities";
 
 @import "components/buttons";
-@import "components/card";
 @import "components/content";
 @import "components/form";
 @import "components/profile-details";
 @import "components/voting-button";
 
-.replies {
-  margin-top: 20px;
+@import "layouts/card";
+
+.reply-actions{
+  display:flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  grid-column: 12/12;
+  color: hsl(238, 40%, 52%);
 }
 
-.replies-container {
-  margin-top: 40px;
+.material-icons{
+  font-size: 14px!important;
+  font-weight: 500;
 }
 
-.reply {
-  display: flex;
-  margin-bottom: 28px;
+.profile-description{
+  font-size: 14px;
+  color: hsl(211, 10%, 45%);
 }
-
-.reply-right-part {
-  width: 100%;
-}
-
-
 
 
 

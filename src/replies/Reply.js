@@ -28,47 +28,57 @@ const Reply = ({
   const replyId = parentId ? parentId : reply.id;
   const createdAt = Math.round((new Date().getTime() - new Date(reply.createdAt).getTime())/ (1000 * 3600 * 24));
   return (
-    <div className="card">
-      <div key={reply.id} className="reply">
-        <div className="reply-image-container">
-          <img src={reply.icon} alt="user profile" />
+    <div className="">
+      <div key={reply.id} className="card">
+        <div class="column-voting">
+          <div className="vote p-5">
+            <i className="material-icons">add</i>
+            <p className="votes">12</p>
+            <i className="material-icons">minimize</i>
+          </div>
         </div>
-        <div className="reply-right-part">
-          <div className="reply-content">
-            <div className="reply-author">{reply.username}</div>
-            <div className="reply-date"> {createdAt} days ago</div>
-          <div className="reply-actions">
-            {canEdit && (
-              <div
-                className="reply-action reply-action-color"
-                onClick={() =>
-                  setActiveReply({ id: reply.id, type: "editing" })
-                }
-              >
-                <i class="material-icons">edit</i> Edit
+
+        <div className="column-description">
+          <div className="profile">
+            <div className="profile-details">
+              <img src={reply.icon} alt="user profile" />
+              <p className="author p-5">{reply.username}</p>
+              <p className="date p-5">{createdAt} days ago</p>
+            </div>
+            <div className="reply-content">
+              <div className="reply-actions">
+                {canEdit && (
+                  <div
+                    className="reply-actions reply-action-color"
+                    onClick={() =>
+                      setActiveReply({ id: reply.id, type: "editing" })
+                    }
+                  >
+                    <i class="material-icons">edit</i> Edit
+                  </div>
+                )}
+                {canDelete && (
+                  <div
+                    className="reply-actions delete-action"
+                    onClick={() => deleteReply(reply.id)}
+                  >
+                    <i class="material-icons">delete</i> Delete
+                  </div>
+                )}
+                {canReply && (
+                  <div
+                    className="reply-actions reply-action-color"
+                    onClick={() =>
+                      setActiveReply({ id: reply.id, type: "replying" })
+                    }
+                  >
+                    <i class="material-icons">reply</i> Reply
+                  </div>
+                )}
               </div>
-            )}
-            {canDelete && (
-              <div
-                className="reply-action delete-action"
-                onClick={() => deleteReply(reply.id)}
-              >
-                <i class="material-icons">delete</i> Delete
-              </div>
-            )}
-            {canReply && (
-              <div
-                className="reply-action reply-action-color"
-                onClick={() =>
-                  setActiveReply({ id: reply.id, type: "replying" })
-                }
-              >
-                 <i class="material-icons">reply</i> Reply
-              </div>
-            )}
+            </div>
           </div>
-          </div>
-          {!isEditing && <div className="reply-text">{reply.body}</div>}
+          {!isEditing &&<div className="profile-description"><p>{reply.body}</p></div>}
           {isEditing && (
             <ReplyForm
               submitLabel="Update"
@@ -104,6 +114,7 @@ const Reply = ({
               ))}
             </div>
           )}
+          
         </div>
       </div>
     </div>

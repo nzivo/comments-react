@@ -15,25 +15,28 @@ const ReplyForm = ({
     setText("");
   };
   return (
-    <form onSubmit={onSubmit}>
-      <textarea
-        className="reply-form-textarea"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      />
-      <button className="reply-form-button" disabled={isTextareaDisabled}>
-        {submitLabel}
-      </button>
-      {hasCancelButton && (
-        <button
-          type="button"
-          className="reply-form-button reply-form-cancel-button"
-          onClick={handleCancel}
-        >
-          Cancel
+    <div className="form-row" >
+      <form onSubmit={onSubmit}>
+        <textarea
+          className="reply-form-textarea"
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+        />
+        <button className="main-btn reply-form-button" disabled={isTextareaDisabled}>
+          {submitLabel}
         </button>
-      )}
-    </form>
+        {hasCancelButton && (
+          <button
+            type="button"
+            className="reply-form-button reply-form-cancel-button"
+            onClick={handleCancel}
+          >
+            Cancel
+          </button>
+        )}
+      </form>
+    </div>
+    
   );
 };
 
