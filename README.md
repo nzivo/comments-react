@@ -12,6 +12,9 @@ In the project directory, you can run:
 
 ### `yarn start`
 
+You can view the deployed app here:.\
+`Vercel` [https://comments-react-roan.vercel.app/](https://comments-react-roan.vercel.app/) to view it in the browser.
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
